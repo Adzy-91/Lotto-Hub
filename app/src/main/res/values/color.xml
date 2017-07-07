@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#009688</color>
+    <color name="primary_dark">#00796B</color>
+    <color name="accent">#F50057</color>
+    <color name="app_background">#EEEEEE</color>
+
+    <!--Primary Pallet-->
+    <color name="teal_50">#E0F2F1</color>
+    <color name="teal_300">#4DB6AC</color>
+    <color name="teal_500">#009688</color>
+    <color name="teal_700">#00796B</color>
+
+    <!--Secondary Pallet-->
+    <color name="pink_a400">#F50057</color>
+
+    <!--Dark Text-->
+    <color name="dark_text_primary">#DB000000</color>
+    <color name="dark_text_secondary">#8B000000</color>
+    <color name="dark_text_hints">#41000000</color>
+
+    <!--Light Text-->
+    <color name="light_text_secondary">#B3ffffff</color>
+    <color name="light_text_hints">#30ffffff</color>
+
+    <!--Ripple-->
+    <color name="ripple_teal">#2D009688</color>
+    <color name="ripple_white">#70ffffff</color>
+    <color name="ripple_accent">#70F50057</color>
+    <color name="ripple_orange">#70FF9100</color>
+
+    <!--General-->
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <!--SnackBar-->
+    <color name="snack_bar_text">@color/white</color>
+
+    <!--Nav Drawer-->
+    <color name="divider_black">#1F000000</color>
+    <color name="divider_white">#1FFFFFFF</color>
+    <color name="nav_item_ripple">@color/ripple_teal</color>
+    <color name="nav_item_selected_text">@color/primary</color>
+
+    <!--Checker Table-->
+    <color name="checker_table_num_text">@color/dark_text_primary</color>
+    <color name="checker_table_num_text_pressed">@color/accent</color>
+    <color name="checker_table_num_text_disabled">@color/dark_text_hints</color>
+    <color name="checker_table_num_background_pressed">@color/white</color>
+    <color name="checker_table_num_background">#FAFAFA</color>
+
+    <!--Ticket-->
+    <color name="ticket">#FF9100</color>
+    <color name="ticket_num_square">@color/dark_text_secondary</color>
+    <color name="ticket_line_num_text">@color/dark_text_secondary</color>
+
+    <!--Result Breakdown Table-->
+    <color name="result_breakdown_table_contrast_row">@color/teal_50</color>
+
+    <!--Prize-->
+    <color name="prize_winning_ball_text">#FAFAFA</color>
+    <color name="prize_winning_ball_background">#E0E0E0</color>
+    <color name="prize_message_loser">#E53935</color>
+
+    <!--Calendar-->
+    <color name="calendar_selected_date_background">#CCF50057</color>
+
+    <!--Crop Activity-->
+    <color name="toolbar_background_crop_activity">@color/primary</color>
+    <color name="crop_activity_overlay">#A6000000</color>
+</resources>

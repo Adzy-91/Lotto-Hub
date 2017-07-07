@@ -1,0 +1,27 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewCheckerTableNum"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_margin="1dp"
+    android:clickable="true"
+    android:foreground="@drawable/foreground_accent"
+    app:cardBackgroundColor="@color/checker_table_num_background"
+    app:cardElevation="0dp"
+    app:cardMaxElevation="0dp"
+    app:cardCornerRadius="1dp"
+    >
+
+    <TextView
+        android:id="@+id/textViewCheckerTableNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_gravity="center"
+        android:textColor="@color/state_list_checker_table_num_text"
+        android:textSize="@dimen/font_size_small"
+        />
+</android.support.v7.widget.CardView>

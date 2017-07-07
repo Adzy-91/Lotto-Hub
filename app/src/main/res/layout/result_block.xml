@@ -1,0 +1,101 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewResultBlock"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:padding="5dp"
+    android:foreground="@drawable/foreground_teal"
+    android:clickable="true"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/resultBlockTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/default_spacing"
+            android:textSize="@dimen/font_size_medium"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_text_primary"/>
+
+
+        <LinearLayout
+            android:id="@+id/resultBlockNumsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/default_spacing"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/WinningNum"
+                android:id="@+id/resultBlockNumOne"/>
+
+            <TextView
+                style="@style/WinningNum"
+                android:id="@+id/resultBlockNumTwo"/>
+
+            <TextView
+                style="@style/WinningNum"
+                android:id="@+id/resultBlockNumThree"/>
+
+            <TextView
+                style="@style/WinningNum"
+                android:id="@+id/resultBlockNumFour"/>
+
+            <TextView
+                style="@style/WinningNum"
+                android:id="@+id/resultBlockNumFive"/>
+
+            <TextView
+                style="@style/WinningNum"
+                android:id="@+id/resultBlockNumSix"/>
+
+            <TextView
+                style="@style/BonusNum"
+                android:id="@+id/resultBlockBonusOne"/>
+
+            <TextView
+                style="@style/BonusNum"
+                android:id="@+id/resultBlockBonusTwo"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/resultBlockDrawInfoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/resultBlockDrawInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/dark_text_secondary"
+                android:textSize="@dimen/font_size_micro"/>
+
+            <ImageView
+                android:id="@+id/resultBlockArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/result_block_arrow"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

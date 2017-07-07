@@ -1,0 +1,19 @@
+{
+  "drawTitle": "Euro Millions",
+  "lines": [
+    {
+      "letter": "a",
+      "capacity": 7,
+      "linePosition": 0,
+      "nums": [
+        "31",
+        "4",
+        "2",
+        "3",
+        "1",
+        "8",
+        "11"
+      ]
+    }
+  ]
+}

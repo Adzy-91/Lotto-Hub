@@ -1,0 +1,62 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/navDrawerItemCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="@drawable/foreground_teal"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        app:cardMaxElevation="0dp">
+
+        <RelativeLayout
+            android:id="@+id/navDrawerItemContainer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/nav_drawer_item_height"
+            android:background="@drawable/color_state_list_nav_item_background"
+            >
+
+            <ImageView
+                android:id="@+id/navDrawerItemIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/navDrawerItemTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="72dp"
+                android:layout_marginLeft="72dp"
+                android:layout_centerVertical="true"
+                android:textColor="@drawable/color_state_list_nav_item_text"
+                android:textSize="@dimen/font_size_small"
+                android:fontFamily="sans-serif-medium"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/navDrawerItemDivider"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:visibility="gone">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/divider_black"/>
+    </RelativeLayout>
+</LinearLayout>

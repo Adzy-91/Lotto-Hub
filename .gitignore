@@ -1,0 +1,16 @@
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+/projectFilesBackup
+/app/src/main/assets
+/app/.idea
+/app/libs
+/app/src/androidTest/
+/app/proguard-rules.pro
+/app/build
+/app/app.iml
+/app/local.properties
+LottoHub.iml

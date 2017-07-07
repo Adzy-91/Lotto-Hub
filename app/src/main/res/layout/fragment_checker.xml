@@ -1,0 +1,102 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayoutChecker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:clickable="true">
+    <LinearLayout
+        android:id="@+id/checkerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewCheckerTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:clickable="false"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="4dp">
+            <LinearLayout
+                android:id="@+id/checkerTable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:orientation="vertical">
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/checkerEmptyListText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="top|center"
+            android:textColor="@color/dark_text_hints"
+            android:textSize="@dimen/font_size_medium"
+            android:text="@string/checker_empty_list_view"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewLineContainer"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            >
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabButtonAddLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/fab_add_line"
+        android:scaleType="centerInside"
+        app:fabSize="mini"
+        app:rippleColor="@color/ripple_white"
+        app:layout_anchor="@id/cardViewCheckerTable"
+        app:layout_anchorGravity="bottom|right|end"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/buttonCheckNumbers"
+        android:layout_width="@dimen/cardView_button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:clickable="true"
+        android:foreground="@drawable/foreground_white"
+        android:animateLayoutChanges="true"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="4dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/accent"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_anchor="@id/checkerContainer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_small"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/button_check_numbers"/>
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

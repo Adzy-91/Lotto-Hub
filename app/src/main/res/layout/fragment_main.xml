@@ -1,0 +1,76 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipeRefreshLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            style="@style/AppPadding"
+            android:id="@+id/resultBlockContainerMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="outsideOverlay">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+     <TextView
+         android:id="@+id/textViewNoConnectionMain"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:drawableTop="@drawable/icon_no_results"
+         android:drawablePadding="8dp"
+         android:visibility="gone"
+         android:textColor="@color/dark_text_secondary"
+         android:text="@string/main_fragment_empty_view"
+         app:layout_anchor="@id/resultBlockContainerMain"
+         app:layout_anchorGravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/progressBarContainerMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_anchor="@id/resultBlockContainerMain"
+        app:layout_anchorGravity="center">
+
+         <ProgressBar
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/ProgressBarText"
+            android:layout_marginTop="16dp"
+            android:text="@string/main_fragment_loading_message" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabCheckNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/fab_camera"
+        android:scaleType="centerInside"
+        app:layout_behavior="ie.adampurser.lottohub.FABBehaviour"
+        app:layout_anchorGravity="bottom|end"
+        app:layout_anchor="@id/resultBlockContainerMain"
+        app:fabSize="normal"
+        app:rippleColor="@color/ripple_white"
+        app:pressedTranslationZ="@dimen/fabTranslationZ" />
+
+ </android.support.design.widget.CoordinatorLayout>

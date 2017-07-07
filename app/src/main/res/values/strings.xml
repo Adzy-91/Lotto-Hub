@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lotto Hub</string>
+    <string name="email_address">sundriedapps@gmail.com</string>
+
+    <string name="checker_empty_list_view">Add a new line</string>
+    <string name="saved_tickets_empty_list_view">Your saved tickets go here.</string>
+    <string name="latest_result_date_format">EEE dd MMM yyyy</string>
+    <string name="raffle_number_title">Winning Raffle Number</string>
+
+    <!--Buttons-->
+    <string name="button_check_numbers">CHECK TICKET</string>
+    <string name="button_guidelines">GUIDELINES</string>
+    <string name="button_crop_settings">SETTINGS</string>
+    <string name="button_previous_result">PREVIOUS</string>
+    <string name="button_next_result">NEXT</string>
+
+    <!--Toolbar Titles-->
+    <string name="toolbar_title_main">Latest Results</string>
+    <string name="toolbar_tabs_results">Results</string>
+    <string name="toolbar_tabs_winnings">Result Breakdown</string>
+    <string name="toolbar_title_checker">Checker</string>
+    <string name="toolbar_title_prize">Winnings</string>
+    <string name="toolbar_title_settings">Settings</string>
+    <string name="toolbar_title_saved_tickets">Saved Tickets</string>
+
+    <!--Nav Drawer-->
+    <string name="nav_drawer_open">Navigation drawer opened</string>
+    <string name="nav_drawer_closed">Navigation drawer closed</string>
+
+    <!--Lotto Draw Titles-->
+    <string name="title_lotto">Lotto</string>
+    <string name="title_lotto_plus_one">Lotto Plus 1</string>
+    <string name="title_lotto_plus_two">Lotto Plus 2</string>
+    <string name="title_daily_millions">Daily Million</string>
+    <string name="title_daily_millions_plus">Daily Million Plus</string>
+    <string name="title_euro_millions">Euro Millions</string>
+    <string name="title_euro_millions_plus">Euro Millions Plus</string>
+
+    <!--Menu Items-->
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_about">About</string>
+    <string name="menu_calendar">Change Date</string>
+    <string name="menu_camera">Ticket Checker</string>
+    <string name="menu_saved_numbers">Saved Tickets</string>
+    <string name="menu_save_ticket">Save Ticket</string>
+    <string name="menu_checker">Checker</string>
+    <string name="menu_licenses">Licenses</string>
+    <string name="menu_checker_settings">Checker Settings</string>
+
+    <!--Toasts-->
+    <string name="toast_update_failed">Failed to update results</string>
+    <string name="toast_update_failed_partially">Some results failed to update</string>
+    <string name="toast_checker_line_added">Line added</string>
+    <string name="toast_checker_no_lines">No lines to check!</string>
+    <string name="toast_checker_line_already_added">Line already added</string>
+    <string name="toast_checker_max_num_of_lines">Max number of lines reached</string>
+    <string name="toast_saved_tickets_fail">Failed to load tickets</string>
+    <string name="toast_load_failed">Failed to load results</string>
+    <string name="toast_no_internet_connection">No internet connection</string>
+    <string name="toast_latest_result_reached">Latest result reached</string>
+    <string name="toast_checker_no_results">Failed to check ticket. Try refreshing your results</string>
+    <string name="toast_max_num_of_saved_tickets">Maximum number of saved tickets reached for this draw.</string>
+
+    <!--SnackBar-->
+    <string name="snack_bar_remove_line_undo">UNDO</string>
+    <string name="snack_bar_remove_line_text">Line removed</string>
+    <string name="snack_bar_remove_ticket_text">Ticket deleted</string>
+
+    <!--Dialogs-->
+    <string name="dialog_title_save_ticket">Save ticket?</string>
+    <string name="dialog_positive_button_save_ticket">Save</string>
+    <string name="dialog_negative_button_save_ticket">Don\'t save</string>
+    <string name="dialog_title_calendar">Select draw date</string>
+    <string name="dialog_title_licenses">Open Source Licenses</string>
+    <string name="dialog_title_upgrade">You\'re premium!</string>
+    <string name="dialog_message_upgrade">Thank you for purchasing the premium upgrade, we really appreciate your support.</string>
+
+    <!--Result Breakdown Table-->
+    <string name="table_title_match">Match</string>
+    <string name="table_title_winners">Winners</string>
+    <string name="table_title_prize">Prize</string>
+
+    <!--Result Fragment-->
+    <string name="calendar_footer">Current draw</string>
+
+    <!--Accessibility-->
+    <string name="access_checker_button_remove">Remove line</string>
+
+    <!--Settings-->
+    <string name="settings_category_general">General</string>
+    <string name="settings_category_lottery">Lottery</string>
+    <string name="settings_title_plus">Plus</string>
+    <string name="settings_title_version">Version</string>
+    <string name="settings_key_screen">keySettings</string>
+    <string name="settings_key_category_general">keyGeneral</string>
+    <string name="settings_key_version">keyVersion</string>
+    <string name="settings_key_plus">keyPlus</string>
+    <string name="settings_key_first_run">keyFirstRun</string>
+    <string name="settings_draws_to_check_index">keyNumOfDrawsToCheck</string>
+    <string name="settings_summary_plus">Check plus draws</string>
+
+    <!--MainFragment-->
+    <string name="main_fragment_empty_view">No results to show</string>
+    <string name="main_fragment_loading_message">Updating results…</string>
+
+    <!--PrizeFragment-->
+    <string name="prize_loser_message_text">
+        Unfortunately there were no winning selections this time. Better luck for the next draw!
+    </string>
+    <string name="ticket_title">Your ticket</string>
+    <string name="prize_winnings_title">Prizes</string>
+    <string name="ticket_footer_text">Draw(s):</string>
+    <string name="prize_loser_message_title">Not a Winner!</string>
+    <string name="prize_winner_message_title">You\'re a Winner!</string>
+    <string name="single_prize_winner_message_text">Congratulations you won a prize!</string>
+    <string name="progress_bar_prize_fragment">Checking…</string>
+    <string name="prize">€%1$s</string>
+
+    <!--CheckerFragment-->
+    <string name="progress_bar_checker">Fetching Results…</string>
+
+    <!--ocr-->
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Ocr dependencies cannot be downloaded due to low device storage</string>
+    <string name="ocr_header">Click &quot;Detect Text&quot; to detect text</string>
+    <string name="read_text">Detect Text</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="ocr_success">Text read successfully</string>
+    <string name="ocr_failure">No text captured</string>
+    <string name="ocr_error">"Error reading text: %1$s"</string>
+
+
+</resources>

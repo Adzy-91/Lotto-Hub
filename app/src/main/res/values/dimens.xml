@@ -1,0 +1,38 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="vertical_margin">16dp</dimen>
+
+    <dimen name="default_spacing">5dp</dimen>
+    <dimen name="table_padding">5dp</dimen>
+    <dimen name="lotto_ball_diameter">30dp</dimen>
+    <dimen name="lotto_ball_diameter_prize">30dp</dimen>
+    <dimen name="ticket_num_diameter">32dp</dimen>
+    <dimen name="border">1dp</dimen>
+    <dimen name="checker_line_height">50dp</dimen>
+    <dimen name="cardView_button_width">200dp</dimen>
+    <dimen name="fabTranslationZ">4dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+
+    <!--Nav Drawer-->
+    <dimen name="nav_drawer_item_height">64dp</dimen>
+    <dimen name="nav_drawer_divider_margin">8dp</dimen>
+
+    <!--Fonts-->
+    <dimen name="font_size_large">22sp</dimen>
+    <dimen name="font_size_medium">18sp</dimen>
+    <dimen name="font_size_small">14sp</dimen>
+    <dimen name="font_size_micro">12sp</dimen>
+    <dimen name="font_size_super_micro">11sp</dimen>
+    <dimen name="font_size_dialog_checker">7sp</dimen>
+    <dimen name="font_size_toolbar">19sp</dimen>
+    <dimen name="font_size_title">20sp</dimen>
+
+    <!--
+    Toolbar icons = 19dp
+    Crop toolbar icons = 24dp
+    FAB icon = 22dp
+    FAB icon mini = 20dp
+    FAB icon mini resultFragment 16dp
+    -->
+</resources>

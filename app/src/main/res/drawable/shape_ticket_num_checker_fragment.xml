@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+    <size
+        android:width="@dimen/ticket_num_diameter"
+        android:height="@dimen/ticket_num_diameter"/>
+
+    <stroke android:color="@color/ticket_num_square" android:width="@dimen/border"/>
+
+    <solid android:color="@android:color/transparent"/>
+
+    <corners android:radius="1dp"/>
+
+    <padding android:left="@dimen/border" android:bottom="@dimen/border"
+             android:top="@dimen/border" android:right="@dimen/border"/>
+</shape>

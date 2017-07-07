@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuItemCheckerSettings"
+        android:title="@string/menu_checker_settings"
+        android:icon="@drawable/toolbar_checker_settings"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menuItemCalendar"
+        android:title="@string/menu_calendar"
+        android:icon="@drawable/toolbar_calendar"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menuItemShowSavedTickets"
+        android:title="@string/menu_saved_numbers"
+        android:icon="@drawable/toolbar_saved_numbers"
+        app:showAsAction="ifRoom"/>
+
+</menu>

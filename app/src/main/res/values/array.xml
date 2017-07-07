@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Navigation drawer-->
+    <string-array name="region_titles">
+        <item>Ireland</item>
+    </string-array>
+
+
+    <string-array name="nav_drawer_titles">
+        <item>Header</item>
+        <item>Latest Results</item>
+        <item>Results</item>
+        <item>Checker</item>
+        <item>Saved Tickets</item>
+        <item>Settings</item>
+    </string-array>
+
+    <integer-array name="nav_drawer_divider_indexes">
+        <item>4</item>
+    </integer-array>
+
+    <!--Checker-->
+    <string-array name="checker_settings_items">
+        <item>Last 2 draws</item>
+        <item>Last 4 draws</item>
+        <item>Last 8 draws</item>
+    </string-array>
+
+    <string-array name="crop_settings_items">
+        <item>Last draw</item>
+        <item>Last 2 draws</item>
+        <item>Last 4 draws</item>
+        <item>Last 8 draws</item>
+    </string-array>
+</resources>

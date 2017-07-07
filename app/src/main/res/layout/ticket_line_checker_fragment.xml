@@ -1,0 +1,82 @@
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginBottom="4dp"
+    android:paddingBottom="1dp"
+    android:clipToPadding="false">
+     <android.support.v7.widget.CardView
+         xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/ticketLineChecker"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:foreground="@drawable/foreground_teal"
+         android:clickable="true"
+         app:cardElevation="1dp"
+         app:cardCornerRadius="4dp"
+         app:cardBackgroundColor="@color/white">
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:paddingLeft="8dp"
+             android:paddingStart="8dp"
+             android:paddingRight="16dp"
+             android:paddingEnd="16dp"
+             android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/ticketLineLetter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/font_size_medium"/>
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/ticketLineNumContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ticketNumChecker"
+                    android:id="@+id/ticketLineNumOne"/>
+
+                <TextView
+                    style="@style/ticketNumChecker"
+                    android:id="@+id/ticketLineNumTwo"/>
+
+                <TextView
+                    style="@style/ticketNumChecker"
+                    android:id="@+id/ticketLineNumThree"/>
+
+                <TextView
+                    style="@style/ticketNumChecker"
+                    android:id="@+id/ticketLineNumFour"/>
+
+                <TextView
+                    style="@style/ticketNumChecker"
+                    android:id="@+id/ticketLineNumFive"/>
+
+                <TextView
+                    style="@style/ticketNumChecker"
+                    android:id="@+id/ticketLineNumSix"/>
+
+                <TextView
+                    style="@style/ticketNumChecker"
+                    android:id="@+id/ticketLineBonusOne"/>
+
+                <TextView
+                    style="@style/ticketNumChecker"
+                    android:id="@+id/ticketLineBonusTwo"/>
+            </LinearLayout>
+         </LinearLayout>
+     </android.support.v7.widget.CardView>
+</LinearLayout>

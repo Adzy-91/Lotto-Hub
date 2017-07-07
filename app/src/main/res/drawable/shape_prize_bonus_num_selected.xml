@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="oval">
+
+    <size android:height="@dimen/lotto_ball_diameter_prize"
+          android:width="@dimen/lotto_ball_diameter_prize"/>
+
+    <stroke android:color="@color/primary"
+            android:width="1dp"/>
+
+    <solid android:color="@color/white"/>
+
+    <padding android:left="@dimen/border" android:bottom="@dimen/border"
+             android:top="@dimen/border" android:right="@dimen/border"/>
+</shape>

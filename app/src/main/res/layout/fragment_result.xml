@@ -1,0 +1,105 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmentResult"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        style="@style/AppPadding"
+        android:id="@+id/resultBlockContainerResultFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:clipToPadding="false"
+        android:overScrollMode="ifContentScrolls"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"
+        android:background="@color/app_background">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarResultFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/white"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_anchor="@id/resultBlockContainerResultFragment"
+        app:layout_anchorGravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/buttonPrevious"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:foreground="@drawable/foreground_white"
+                android:clickable="true"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@android:color/transparent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/fab_arrow_left_pink"
+                    android:drawableStart="@drawable/fab_arrow_left_pink"
+                    android:drawablePadding="16dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/dark_text_primary"
+                    android:textSize="@dimen/font_size_small"
+                    android:text="@string/button_previous_result" />
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:id="@+id/toolbarDividerResultFragment"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/divider_black"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/buttonNext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:foreground="@drawable/foreground_white"
+                android:clickable="true"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@android:color/transparent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/fab_arrow_right_pink"
+                    android:drawableEnd="@drawable/fab_arrow_right_pink"
+                    android:drawablePadding="16dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/dark_text_primary"
+                    android:textSize="@dimen/font_size_small"
+                    android:text="@string/button_next_result"/>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabResultFragment"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/fab_calendar"
+        app:fabSize="normal"
+        app:layout_anchor="@id/toolbarResultFragment"
+        app:layout_anchorGravity="center|top"
+        app:rippleColor="@color/ripple_white"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

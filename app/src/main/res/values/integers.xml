@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Navigation drawer-->
+    <integer name="nav_drawer_size">6</integer>
+
+    <integer name="nav_index_latest_results">1</integer>
+    <integer name="nav_index_results">2</integer>
+    <integer name="nav_index_checker">3</integer>
+    <integer name="nav_index_saved_tickets">4</integer>
+    <integer name="nav_index_settings">5</integer>
+
+</resources>

@@ -1,0 +1,43 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <include
+        layout="@layout/checker_table_num"
+        android:id="@+id/checkerRowItem1"/>
+
+    <include
+        layout="@layout/checker_table_num"
+        android:id="@+id/checkerRowItem2"/>
+
+    <include
+        layout="@layout/checker_table_num"
+        android:id="@+id/checkerRowItem3"/>
+
+    <include
+        layout="@layout/checker_table_num"
+        android:id="@+id/checkerRowItem4"/>
+
+    <include
+        layout="@layout/checker_table_num"
+        android:id="@+id/checkerRowItem5"/>
+
+    <include
+        layout="@layout/checker_table_num"
+        android:id="@+id/checkerRowItem6"/>
+
+    <include
+        layout="@layout/checker_table_num"
+        android:id="@+id/checkerRowItem7"/>
+
+    <include
+        layout="@layout/checker_table_num"
+        android:id="@+id/checkerRowItem8"/>
+
+    <include
+        layout="@layout/checker_table_num"
+        android:id="@+id/checkerRowItem9"/>
+
+</LinearLayout>

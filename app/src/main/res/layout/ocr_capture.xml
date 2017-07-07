@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <ie.adampurser.lottohub.camera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ie.adampurser.lottohub.camera.GraphicOverlay
+            android:id="@+id/graphicOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ie.adampurser.lottohub.camera.CameraSourcePreview>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+
+        <com.zl.reik.dilatingdotsprogressbar.DilatingDotsProgressBar
+            android:id="@+id/dotsProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:radius="5dp"
+            android:color="@color/light_text_secondary"
+            app:dd_numDots="4"
+            app:dd_scaleMultiplier="1.5"
+            app:dd_animationDuration="500"
+            app:dd_horizontalSpacing="4dp"
+            />
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/ocrProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:progress_reached_color="@color/accent"
+            app:progress_unreached_color="#30ffffff"
+            app:progress_reached_bar_height="4dp"
+            app:progress_unreached_bar_height="2dp"
+            app:progress_text_color="@color/white"
+            app:progress_text_size="14sp"
+            app:progress_text_visibility="visible"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

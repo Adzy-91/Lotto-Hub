@@ -1,0 +1,33 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:orientation="vertical"
+    android:paddingBottom="16dp">
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/calendarFragmentCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:mcv_selectionColor="@color/calendar_selected_date_background"
+        app:mcv_arrowColor="@color/accent">
+    </com.prolificinteractive.materialcalendarview.MaterialCalendarView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/dark_text_hints"
+        android:text="@string/calendar_footer"/>
+
+    <TextView
+        android:id="@+id/calenderFragmentDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/dark_text_primary"
+        android:textSize="@dimen/font_size_large"/>
+</LinearLayout>

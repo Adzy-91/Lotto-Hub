@@ -1,0 +1,138 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--Toolbar-->
+    <style name="ToolbarTitleTextAppearance" parent="Base.TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/font_size_toolbar</item>
+    </style>
+
+    <!--Dialogs-->
+    <style name="DialogAccent" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColor">@color/dark_text_primary</item>
+    </style>
+
+    <style name="DialogPrimary" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/primary</item>
+        <item name="colorAccent">@color/primary</item>
+    </style>
+
+    <style name="DialogDarkTextSecondary" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/dark_text_secondary</item>
+        <item name="colorAccent">@color/primary</item>
+    </style>
+
+    <style name="DialogDarkTextPrimary" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/dark_text_primary</item>
+        <item name="colorAccent">@color/primary</item>
+    </style>
+
+    <!--Spinner-->
+    <style name="DrawSpinner" parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:dropDownSelector">?android:selectableItemBackground</item>
+        <item name="android:divider">@null</item>
+        <item name="android:popupBackground">@color/white</item>
+        <item name="overlapAnchor">true</item>
+    </style>
+
+    <!--*** General ***-->
+    <style name="AppPadding">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <!--*** Result Block ***-->
+
+    <style name="LottoBall">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/default_spacing</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="WinningNum" parent="LottoBall">
+        <item name="android:background">@drawable/shape_lotto_ball_winning_num</item>
+    </style>
+
+    <style name="BonusNum" parent="LottoBall">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:background">@drawable/shape_lotto_ball_bonus_num</item>
+    </style>
+
+
+    <!--Ticket-->
+    <style name="ticketNumChecker">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/dark_text_primary</item>
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:background">@drawable/shape_ticket_num_checker_fragment</item>
+    </style>
+
+    <style name="ticketNumPrize">
+        <item name="android:layout_width">@dimen/ticket_num_diameter</item>
+        <item name="android:layout_height">@dimen/ticket_num_diameter</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/dark_text_primary</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+    </style>
+
+    <!--Prize-->
+    <style name="PrizeNum">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+    </style>
+
+    <style name="PrizeWinningNum" parent="PrizeNum">
+        <item name="android:background">@drawable/shape_prize_winning_num</item>
+        <item name="android:textColor">@color/prize_winning_ball_text</item>
+    </style>
+
+    <style name="PrizeBonusNum" parent="PrizeNum">
+        <item name="android:background">@drawable/shape_prize_bonus_num</item>
+        <item name="android:textColor">@color/prize_winning_ball_background</item>
+    </style>
+
+    <!--*** Breakdown Table  ***-->
+
+    <style name="TableRowResultBreakdown">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <style name="TableValueResultBreakdown">
+        <item name="android:textColor">@color/dark_text_primary</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="ProgressBarText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/dark_text_secondary</item>
+        <item name="android:textSize">@dimen/font_size_micro</item>
+    </style>
+</resources>
+

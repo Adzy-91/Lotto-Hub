@@ -1,0 +1,61 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/ticketLineLetter"
+        android:layout_width="@dimen/ticket_num_diameter"
+        android:layout_height="@dimen/ticket_num_diameter"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/ticketLineNumContainer"
+        android:layout_toStartOf="@id/ticketLineNumContainer"
+        android:layout_margin="3dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/ticket"
+        android:textSize="@dimen/font_size_small"
+        />
+
+    <LinearLayout
+        android:id="@+id/ticketLineNumContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            style="@style/ticketNumPrize"
+            android:id="@+id/ticketLineNumOne"/>
+
+        <TextView
+            style="@style/ticketNumPrize"
+            android:id="@+id/ticketLineNumTwo"/>
+
+        <TextView
+            style="@style/ticketNumPrize"
+            android:id="@+id/ticketLineNumThree"/>
+
+        <TextView
+            style="@style/ticketNumPrize"
+            android:id="@+id/ticketLineNumFour"/>
+
+        <TextView
+            style="@style/ticketNumPrize"
+            android:id="@+id/ticketLineNumFive"/>
+
+        <TextView
+            style="@style/ticketNumPrize"
+            android:id="@+id/ticketLineNumSix"/>
+
+        <TextView
+            style="@style/ticketNumPrize"
+            android:id="@+id/ticketLineBonusOne"/>
+
+        <TextView
+            style="@style/ticketNumPrize"
+            android:id="@+id/ticketLineBonusTwo"/>
+    </LinearLayout>
+
+</RelativeLayout>
